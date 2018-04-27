@@ -1,0 +1,204 @@
+/* Nanum Pen Script Font Family */
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script');
+
+/* Tajawal, Ubuntu Mono and Condensed Font Families */
+ @import url('https://fonts.googleapis.com/css?family=Tajawal:400,500,700|Ubuntu+Condensed|Ubuntu+Mono:400,700');
+
+/* Blacj Han Sans Font Family */
+ @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
+
+/*  Includes padding and border in the element's total width and height 
+	The '*' makes this a property for every tag on the .html file
+*/
+* {
+  box-sizing: border-box;
+}
+
+/* Fill page height (html part) */
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+/* Fill page height (body element part) */
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.full {
+  background: url(http://sammark.sk/images/hi-tech-technology-noutbuk.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  height:100%;
+}
+
+div.container-body {
+  padding: 0px 15%;
+}
+
+.font-ubuntu-mono {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(10, 10, 15);
+}
+
+.font-project-desc {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 18px;
+  font-weight: 500;
+  color: #1E1E1E;
+}
+
+.font-ubuntu-condensed {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(10, 40, 80);
+}
+
+.font-nav-links {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  /*text-align: center;*/
+  /*color: rgb(25, 50, 100);*/
+}
+
+.font-tajawal {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(25, 50, 120);
+}
+
+.font-nanum-pen-script {
+  font-family: 'Nanum Pen Script', cursive;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+.font-project {
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(110, 255, 255);
+  margin-top: 20px;
+}
+
+.text-author {
+  color: rgb(0, 71, 49);
+}
+
+.brand {
+  position: relative;
+  left: 20px;
+  border: 2px solid rgb(25, 50, 120);
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.nav-links {
+  position: relative;
+  left: 20px;
+  margin-right: 25px;
+}
+
+.nav-btn {
+  position: relative;
+  right: 20px;
+}
+
+#about-me {
+  background-color: rgba(220, 220, 220, .8);
+  padding: 40px 20px;
+}
+
+#portfolio {
+  padding: 40px 20px;
+  background-color: rgba(41, 86, 143, .6);
+  border-top: 1px solid #000;
+}
+
+#contact {
+  padding: 40px 20px;
+  background-color: rgba(0, 71, 49, .6);
+  border-top: 1px solid #000;  
+}
+
+.img-rounded {
+  display: block;
+  border-radius: 50%;
+  margin: 30px auto;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.img-portfolio {
+  display: block;
+  margin: auto;
+  max-height: 100%;
+  min-width: 100%;
+}
+
+.project {
+  padding: 50px 0px;
+}
+
+div.line {
+  border-top: 2px solid rgb(84, 22, 180);
+}
+
+.buttons {
+  position: relative;
+  top: 33%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.link-btn {
+  background-color: rgb(10, 25, 25);
+  height: 35px;
+  width: 50px;
+}
+
+.btn-project {
+  display: block;
+  font-family: 'Black Han Sans', sans-serif;
+  size: 20px;
+  color: lightblue;
+  text-align: center;
+  background: none;
+  border: 2px solid yellow;
+  border-radius: 20px;
+  margin: 0 auto;
+  cursor: pointer;
+  user-select: none;
+  height: 35px;
+  width: auto;
+  margin-bottom: 20px; 
+}
+
+a.btn-project {
+  text-decoration: none;
+}
+
+footer {
+  padding: 10px 0 1px 0;
+}
+
+.email {
+  text-decoration: underline;
+  color: lightblue;
+}

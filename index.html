@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Victor Hugo Portfolio</title>
+		<!-- Latest compiled and minified CSS of Bootstrap 4.1.0 -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+		<!-- Linking the custom .css file -->
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<!-- Font Awesome CDN -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	</head>
+	
+	<body>
+		<!-- Using bootstrap responsive framework -->
+
+		<!-- Navigation bar -->
+		<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+  
+			<a class="navbar-brand brand font-tajawal" href="#">VICTOR HUGO</a>
+
+		    <button class="navbar-toggler nav-btn" type="button" data-toggle="collapse" data-target="#navbar-supported-content" aria-controls="navbar-supported-content" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+  			</button>
+
+		    <div class="collapse navbar-collapse nav-links justify-content-end" id="navbar-supported-content">
+		    	<ul class="navbar-nav">
+		        	<li class="nav-item"><a class="nav-link font-nav-links" href="#about-me">About</a></li>
+		        	<li class="nav-item"><a class="nav-link font-nav-links" href="#portfolio">Portfolio</a></li>
+		        	<li class="nav-item"><a class="nav-link font-nav-links" href="#contact">Contact</a></li>
+		        	<li class="nav-item active"><a class="nav-link font-nav-links" href="https://drive.google.com/uc?export=download&id=1dqeE1J63BHPclLRXDSbH-LUf_9IVXwtM" target="_blank">Curriculum</a></li>
+		    	</ul>
+		    </div>
+
+		</nav>
+	
+		<!-- Body -->
+		<div class="container-fluid container-body full">	
+
+			<!-- About me Section -->
+			<div id="about-me">
+
+				<img class="img-fluid img-rounded" height="250" width="250" src="./images/profile.jpg">
+
+				<h2 class="font-ubuntu-condensed">&lt;ABOUT ME /&gt;</h2>
+
+				<p class="font-ubuntu-mono text-justify">I enjoyed programming since I began to do it. I am a really green web programmer, trying to learn enough content to become a front-end web developer, and then turn into a full stack developer. I've acquired some knowledge in HTML5, CSS3, Bootstrap4, Sass, JS, jQuery, Angular, React, Node.js, Express.js and MongoDB through courses from <a href="https://www.freecodecamp.org/" target="_blank">FreeCodecamp</a>, <a href="https://www.edx.org/" target="_blank">EDX</a> and <a href="https://www.codecademy.com/" target="_blank">Codecademy</a>.<br /><br />Graduated on Electronic Engineering at Federal University of Sergipe, Brazil. My final paper was about Digital Control, or to be more specific, Estimation and Control on State-Space. There, I acquired some taste for Pattern Recognition.</p>   
+
+			</div>
+
+			<!-- Portfolio Section -->
+			<div id="portfolio">
+
+		      	<h2 class="font-ubuntu-condensed">&lt;PORTFOLIO /&gt;</h2>
+		      	<div class="row project">
+		      		<div class="col-lg-6">
+		       			<img class="img-thumbnail img-portfolio" src="./images/simon_game.png">
+		       		</div>
+		       		<div class="col-lg-6">
+		       			<h3 class="font-project">Simon&reg Game</h3>
+						<p class="font-project-desc text-justify">This was an implementation of the classic Simon Game, where the player will be presented with a sequence of buttons to press in the right order, and the user can choose to be able to make mistakes (strict mode OFF) or not (strict mode ON). This was a task from <a href="https://www.freecodecamp.org/" target="_blank">FreeCodecamp</a>.</p>
+						<a href="https://codepen.io/victorhugossml/full/jzEONN/" target="_blank"><button class="btn-project">Visit Project</button></a> 
+		       		</div>
+		       	</div>
+		       	<div class="line"></div>
+		       	<div class="row project">
+		       		<div class="col-lg-6">
+						<h3 class="font-project">Tic Tac Toe</h3>
+						<p class="font-project-desc text-justify">A simple webpage to play the game Tic Tac Toe that gives the user the choice to play with "O" or "X", and against another player or the computer. The AI uses the already known <a href="https://www.geeksforgeeks.org/minimax-algorithm-in-game-theory-set-1-introduction/" target="_blank">Minimax algorithm</a>. This was also a task from <a href="https://www.freecodecamp.org/" target="_blank">FreeCodecamp</a>.</p>
+						<a href="https://codepen.io/victorhugossml/full/QQXXvM/" target="_blank"><button class="btn-project">Visit Project</button></a> 
+		       		</div>
+		       		<div class="col-lg-6">
+		        		<img class="img-thumbnail img-portfolio" src="./images/tictactoe.png">
+		        	</div>
+		        </div>
+		        <div class="line"></div>
+		        <div class="row project">
+		        	<div class="col-lg-6">
+		        		<img class="img-thumbnail img-portfolio" src="./images/pomodoro_clock.png">
+		        	</div>
+		        	<div class="col-lg-6">
+						<h3 class="font-project">Pomodoro Clock</h3>
+						<p class="font-project-desc text-justify">This is a webpage that executes a Pomodoro Clock, a timer for the client to use the <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank">Pomodoro Technique</a>. The user can configure the timer for session and break intervals between 1 and 90 minutes. This was another task from <a href="https://www.freecodecamp.org/" target="_blank">FreeCodecamp</a>.</p>
+						<a href="https://codepen.io/victorhugossml/full/LQgmwb/" target="_blank"><button class="btn-project">Visit Project</button></a> 
+		       		</div>
+		        </div>
+
+		  	</div>
+
+			<!-- Contact section -->
+			<div id="contact">
+
+		      	<h2 class="font-ubuntu-condensed">&lt;CONTACT /&gt;</h2>
+		      	<!-- <div class="row"> -->
+		        	<!-- <div class="col-md-9"> -->
+		          		<p class="font-ubuntu-mono text-justify">On the buttons below, you can access my LinkedIn profile, in addition to my GitHub and FreeCodecamp projects. If there is interest to contact me, use my e-mail address: <span class="email">victorhugo.ssml@gmail.com</span></p>
+		        	<!-- </div> -->
+		        	<!-- <div class="col-md-3"> -->
+						<div class="buttons">
+		          			<a class="btn link-btn" role="button" href="https://www.linkedin.com/in/victor-hugo-sales-da-silva-mir%C3%A3o-lima-28428212a/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+		          			<a class="btn link-btn" role="button" href="https://github.com/Vic7orHugo/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+		          			<a class="btn link-btn" role="button" href="https://www.freecodecamp.org/vic7orhugo" target="_blank"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a>
+		        		</div>
+		      		<!-- </div> -->
+		      	<!-- </div> -->
+
+		    </div>
+			
+			<!-- Footer line -->
+	   	 	<footer>
+	        	<p class="font-nanum-pen-script">&#169; <a class="text-author" href="https://codepen.io/victorhugossml" target="_blank">Victor Hugo</a></p>
+	    	<footer>
+
+		</div>
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+	</body>
+
+</html>
