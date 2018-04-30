@@ -7,16 +7,28 @@
 /* Blacj Han Sans Font Family */
  @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
 
-/* Media queries to adapt the content padding to devices smaller or bigger than a table (768px size) */
-@media (max-width: 1024px) {
+/* Media queries to adapt the content padding to a diversity of devices based on the bootstrap4 media query to large devices (992px size) */
+@media screen and (max-width: 991px) {
   div.container-body {
     padding: 0;
   }
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+  }
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   div.container-body {
     padding: 0 15%;
+  }
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
   }
 }
 
@@ -34,11 +46,12 @@ html {
 }
 
 /* Fill page height (body element part) */
-body {
+/*body {
   height: 100%;
   margin: 0;
   padding: 0;
-}
+  font-size: 20px;
+}*/
 
 .full-bg {
   background: url(../images/background.jpg) no-repeat center center fixed;
@@ -55,7 +68,8 @@ body {
 
 .font-ubuntu-mono {
   font-family: 'Ubuntu Mono', monospace;
-  font-size: 20px;
+  /*font-size: 20px;*/
+  font-size: 1em;
   font-weight: 400;
   text-align: center;
   color: rgb(10, 10, 15);
@@ -63,14 +77,16 @@ body {
 
 .font-project-desc {
   font-family: 'Ubuntu Mono', monospace;
-  font-size: 18px;
+  /*font-size: 18px;*/
+  font-size: 0.9em;
   font-weight: 500;
   color: #1E1E1E;
 }
 
 .font-ubuntu-condensed {
   font-family: 'Ubuntu Condensed', sans-serif;
-  font-size: 40px;
+  /*font-size: 40px;*/
+  font-size: 2em;
   font-weight: 500;
   text-align: center;
   color: rgb(10, 40, 80);
@@ -78,7 +94,8 @@ body {
 
 .font-nav-links {
   font-family: 'Ubuntu Condensed', sans-serif;
-  font-size: 20px;
+  /*font-size: 20px;*/
+  font-size: 1em;
   font-weight: 500;
   /*text-align: center;*/
   /*color: rgb(25, 50, 100);*/
@@ -86,7 +103,8 @@ body {
 
 .font-tajawal {
   font-family: 'Tajawal', sans-serif;
-  font-size: 17px;
+  /*font-size: 17px;*/
+  font-size: 0.85em;
   font-weight: 700;
   text-align: center;
   color: rgb(25, 50, 120);
@@ -95,17 +113,37 @@ body {
 .font-nanum-pen-script {
   font-family: 'Nanum Pen Script', cursive;
   font-weight: 400;
-  font-size: 20px;
+  /*font-size: 20px;*/
+  font-size: 1em;
   text-align: center;
-  color: rgb(230, 240, 240);
+  color: darkcyan;
 }
 
 .font-project {
   font-family: 'Black Han Sans', sans-serif;
-  font-size: 30px;
+  /*font-size: 30px;*/
+  font-size: 1.5em;
   text-align: center;
   color: rgb(110, 255, 255);
   margin-top: 20px;
+}
+
+p > a {
+  color: lightgray;
+}
+
+p > a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+a.about {
+  color: blue;
+}
+
+a.about:hover {
+  color: cadetblue;
+  text-decoration: underline;
 }
 
 .brand {
@@ -158,7 +196,7 @@ h2 {
 .img-portfolio {
   display: block;
   margin: auto;
-  max-height: 100%;
+  height: auto;
   min-width: 100%;
 }
 
@@ -178,16 +216,23 @@ div.line {
 }
 
 .link-btn {
-  background-color: rgb(10, 25, 25);
-  height: 35px;
-  width: 50px;
+  background-color: #000;
+  margin: 0 2px;
+}
+
+a.link-btn {
+  color: azure;
+}
+
+a.link-btn:hover {
+  color: darkviolet;
 }
 
 .btn-project {
   display: block;
   font-family: 'Black Han Sans', sans-serif;
-  font-size: 20px;
-  color: lightblue;
+  font-size: 1em;
+  color: lightseagreen;
   text-align: center;
   background: none;
   border: 2px solid yellow;
@@ -195,14 +240,15 @@ div.line {
   margin: 0 auto;
   cursor: pointer;
   user-select: none;
-  height: 35px;
-  width: 50%;
+  height: 1.75em;
+  width: 10em;
   margin-bottom: 20px; 
 }
 
 a.btn-project:hover {
   text-decoration: none;
-  color: lightblue;
+  color: midnightblue;
+  border-color: seagreen;
 }
 
 footer {
