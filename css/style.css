@@ -8,13 +8,13 @@
  @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
 
 /* Media queries to adapt the content padding to devices smaller or bigger than a table (768px size) */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   div.container-body {
     padding: 0;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   div.container-body {
     padding: 0 15%;
   }
