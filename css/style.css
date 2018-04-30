@@ -8,7 +8,7 @@
  @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
 
 /* Media queries to adapt the content padding to a diversity of devices based on the bootstrap4 media query to large devices (992px size) */
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   div.container-body {
     padding: 0;
   }
@@ -20,7 +20,7 @@
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   div.container-body {
     padding: 0 15%;
   }
@@ -152,6 +152,7 @@ a.about:hover {
   border: 2px solid rgb(25, 50, 120);
   border-radius: 5px;
   padding: 2px;
+  vertical-align: middle;
 }
 
 .nav-links {
@@ -234,6 +235,7 @@ a.link-btn:hover {
   font-size: 1em;
   color: lightseagreen;
   text-align: center;
+  vertical-align: middle;
   background: none;
   border: 2px solid yellow;
   border-radius: 20px;
