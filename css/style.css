@@ -7,6 +7,19 @@
 /* Blacj Han Sans Font Family */
  @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
 
+/* Media queries to adapt the content padding to devices smaller or bigger than a table (768px size) */
+@media (max-width: 768px) {
+  div.container-body {
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  div.container-body {
+    padding: 0 15%;
+  }
+}
+
 /*  Includes padding and border in the element's total width and height 
 	The '*' makes this a property for every tag on the .html file
 */
@@ -27,8 +40,8 @@ body {
   padding: 0;
 }
 
-.full {
-  background: url(http://sammark.sk/images/hi-tech-technology-noutbuk.jpg) no-repeat center center fixed;
+.full-bg {
+  background: url(../images/background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -36,9 +49,9 @@ body {
   height:100%;
 }
 
-div.container-body {
+/*div.container-body {
   padding: 0px 15%;
-}
+}*/
 
 .font-ubuntu-mono {
   font-family: 'Ubuntu Mono', monospace;
@@ -84,6 +97,7 @@ div.container-body {
   font-weight: 400;
   font-size: 20px;
   text-align: center;
+  color: rgb(230, 240, 240);
 }
 
 .font-project {
@@ -92,10 +106,6 @@ div.container-body {
   text-align: center;
   color: rgb(110, 255, 255);
   margin-top: 20px;
-}
-
-.text-author {
-  color: rgb(0, 71, 49);
 }
 
 .brand {
@@ -125,13 +135,13 @@ div.container-body {
 #portfolio {
   padding: 40px 20px;
   background-color: rgba(41, 86, 143, .6);
-  border-top: 1px solid #000;
+  /*border-top: 1px solid #000;*/
 }
 
 #contact {
   padding: 40px 20px;
   background-color: rgba(0, 71, 49, .6);
-  border-top: 1px solid #000;  
+  /*border-top: 1px solid #000;  */
 }
 
 .img-rounded {
@@ -157,7 +167,7 @@ h2 {
 }
 
 div.line {
-  border-top: 2px solid rgb(84, 22, 180);
+  border-top: 1px solid #000;
 }
 
 .buttons {
@@ -176,7 +186,7 @@ div.line {
 .btn-project {
   display: block;
   font-family: 'Black Han Sans', sans-serif;
-  size: 20px;
+  font-size: 20px;
   color: lightblue;
   text-align: center;
   background: none;
@@ -186,12 +196,13 @@ div.line {
   cursor: pointer;
   user-select: none;
   height: 35px;
-  width: auto;
+  width: 50%;
   margin-bottom: 20px; 
 }
 
-a.btn-project {
+a.btn-project:hover {
   text-decoration: none;
+  color: lightblue;
 }
 
 footer {
