@@ -89,9 +89,9 @@ footer {
 
 .font-project-desc {
   font-family: 'Ubuntu Mono', monospace;
-  font-size: 0.9em;
+  font-size: .9em;
   font-weight: 500;
-  color: #1E1E1E;
+  color: #7EF9FF;
 }
 
 .font-ubuntu-condensed {
@@ -119,16 +119,16 @@ footer {
 .font-nanum-pen-script {
   font-family: 'Nanum Pen Script', cursive;
   font-weight: 400;
-  font-size: 1em;
+  font-size: 1.25em;
   text-align: center;
   color: turquoise;
 }
 
 .font-project {
   font-family: 'Black Han Sans', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-align: center;
-  color: rgb(110, 255, 255);
+  color: #000080;
   margin-top: 20px;
 }
 
@@ -139,20 +139,20 @@ footer {
 }
 
 p > a {
-  color: lightgray;
+  color: #1D2951;
 }
 
 p > a:hover {
-  color: white;
+  color: #1D2951;
   text-decoration: underline;
 }
 
 a.about {
-  color: blue;
+  color: #00A572;
 }
 
 a.about:hover {
-  color: cadetblue;
+  color: #00A572;
   text-decoration: underline;
 }
 
@@ -173,6 +173,8 @@ a.about:hover {
   display: block;
   border-radius: 50%;
   margin: 30px auto;
+  height: 250px;
+  width: auto;
 }
 
 h2 {
@@ -255,13 +257,13 @@ a.link-btn:hover {
 
 .btn-project {
   display: block;
-  font-family: 'Black Han Sans', sans-serif;
-  font-size: 0.75em;
-  font-weight: 400;
-  color: lightblue;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  color: #1034A6;
   text-align: center;
   background: none;
-  border: 2px solid yellow;
+  border: 2px solid #98FB98;
   border-radius: 20px;
   margin: 0 auto;
   cursor: pointer;
@@ -272,9 +274,10 @@ a.link-btn:hover {
 }
 
 a.btn-project:hover {
+  transition: .5s ease;
   text-decoration: none;
   color: midnightblue;
-  border-color: seagreen;
+  background-color: #98FB98;
 }
 
 input, textarea {
@@ -290,12 +293,14 @@ input[type="submit"] {
   width: 6em;
   height: 2em;
   background-color: #6F7C80;
-  border: 2px solid black;
+  border: 2px solid #131516;
   border-radius: 3px;
 }
 
 input[type="submit"]:hover {
-  background-color: cornflowerblue;
+  transition: .5s ease;
+  background-color: #131516;
+  color: #6F7C80;
   border: none;
   cursor: pointer;
 }
