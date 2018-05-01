@@ -8,10 +8,7 @@
  @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
 
 /* Media queries to adapt the content padding to a diversity of devices based on the bootstrap4 media query to large devices (992px size) */
-@media screen and (max-width: 991px) {
-  /*div.container-body {
-    padding: 0;
-  }*/
+/*@media screen and (max-width: 991px) {
   body {
     background-color: floralwhite;
     height: 100%;
@@ -22,9 +19,6 @@
 }
 
 @media screen and (min-width: 992px) {
-  /*div.container-body {
-    padding: 0 15%;
-  }*/
   body {
     background-color: floralwhite;
     height: 100%;
@@ -32,7 +26,7 @@
     padding: 0;
     font-size: 20px;
   }
-}
+}*/
 
 /*  Includes padding and border in the element's total width and height 
 	The '*' makes this a property for every tag on the .html file
@@ -54,6 +48,14 @@ html {
   padding: 0;
   font-size: 20px;
 }*/
+
+body {
+  background-color: floralwhite;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /*font-size: 30px;*/
+}
 
 .navbar-border {
   border-bottom: 2px solid cornflowerblue;
@@ -165,18 +167,17 @@ a.about:hover {
 
 #about-me {
   background-color: rgba(220, 220, 220, .8);
-  padding: 40px 15%;
-  width: 100%;
+  /*padding: 40px 15%;*/
 }
 
 #portfolio {
-  padding: 40px 15%;
+  /*padding: 40px 15%;*/
   background-color: rgba(41, 86, 143, .6);
   /*border-top: 1px solid #000;*/
 }
 
 #contact {
-  padding: 40px 15%;
+  /*padding: 40px 15%;*/
   background-color: rgba(0, 71, 49, .6);
   /*border-top: 1px solid #000;  */
 }
@@ -252,7 +253,7 @@ a.btn-project:hover {
 }
 
 footer {
-  padding-bottom: 1px;
+  padding-bottom: 5px;
   background-color: #313335;
 }
 
