@@ -1,3 +1,11 @@
+/*
+    style.css - CSS file for portfolio.
+    15/02/2018 17:27 GMT -03:00
+ */
+
+/* -------------------------------------------------------------------------- */
+/* Fonts import section */
+
 /* Nanum Pen Script Font Family */
 @import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script');
 
@@ -7,26 +15,8 @@
 /* Blacj Han Sans Font Family */
  @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
 
-/* Media queries to adapt the content padding to a diversity of devices based on the bootstrap4 media query to large devices (992px size) */
-/*@media screen and (max-width: 991px) {
-  body {
-    background-color: floralwhite;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-size: 30px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  body {
-    background-color: floralwhite;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-  }
-}*/
+/* -------------------------------------------------------------------------- */
+/* Page Layout Section */
 
 /*  Includes padding and border in the element's total width and height 
 	The '*' makes this a property for every tag on the .html file
@@ -41,33 +31,56 @@ html {
   position: relative;
 }
 
-/* Fill page height (body element part) */
-/*body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-}*/
-
+/* Fill page height */
 body {
-  background-color: floralwhite;
+  overflow-x: hidden;
   height: 100%;
   margin: 0;
   padding: 0;
-  /*font-size: 30px;*/
 }
 
 .navbar-border {
-  border-bottom: 2px solid cornflowerblue;
+  border-bottom: 2px solid crimson;
 }
 
 div.container-body {
   padding: 0px;
 }
 
+#about-me {
+  background-color: rgba(220, 220, 220, .8);
+}
+
+#portfolio {
+  background-color: #4682B4;
+}
+
+#contact {
+  background-color: #2B2B2B;
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-top: 30px solid #4682B4;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-bottom: 30px solid #4682B4;
+}
+
+footer {
+  padding-bottom: 10px;
+  background-color: #131516;
+}
+
+/* -------------------------------------------------------------------------- */
+/* General Font Styling Section */
+
 .font-ubuntu-mono {
   font-family: 'Ubuntu Mono', monospace;
-  /*font-size: 20px;*/
   font-size: 1em;
   font-weight: 400;
   text-align: center;
@@ -76,7 +89,6 @@ div.container-body {
 
 .font-project-desc {
   font-family: 'Ubuntu Mono', monospace;
-  /*font-size: 18px;*/
   font-size: 0.9em;
   font-weight: 500;
   color: #1E1E1E;
@@ -84,7 +96,6 @@ div.container-body {
 
 .font-ubuntu-condensed {
   font-family: 'Ubuntu Condensed', sans-serif;
-  /*font-size: 40px;*/
   font-size: 2em;
   font-weight: 500;
   text-align: center;
@@ -93,16 +104,12 @@ div.container-body {
 
 .font-nav-links {
   font-family: 'Ubuntu Condensed', sans-serif;
-  /*font-size: 20px;*/
   font-size: 1em;
   font-weight: 500;
-  /*text-align: center;*/
-  /*color: rgb(25, 50, 100);*/
 }
 
 .font-tajawal {
   font-family: 'Tajawal', sans-serif;
-  /*font-size: 17px;*/
   font-size: 0.85em;
   font-weight: 700;
   text-align: center;
@@ -112,7 +119,6 @@ div.container-body {
 .font-nanum-pen-script {
   font-family: 'Nanum Pen Script', cursive;
   font-weight: 400;
-  /*font-size: 20px;*/
   font-size: 1em;
   text-align: center;
   color: turquoise;
@@ -120,11 +126,16 @@ div.container-body {
 
 .font-project {
   font-family: 'Black Han Sans', sans-serif;
-  /*font-size: 30px;*/
   font-size: 1.5em;
   text-align: center;
   color: rgb(110, 255, 255);
   margin-top: 20px;
+}
+
+.font-form {
+  font-family: 'Georgia', sans-serif;
+  font-size: 1em;
+  color: black;
 }
 
 p > a {
@@ -145,41 +156,17 @@ a.about:hover {
   text-decoration: underline;
 }
 
-.brand {
-  position: relative;
-  left: 20px;
-  border: 2px solid aquamarine;
-  border-radius: 5px;
-  padding: 2px;
-  vertical-align: middle;
-}
+/* -------------------------------------------------------------------------- */
+/* General Elements Styling section */
 
 .nav-links {
   position: relative;
   left: 20px;
-  margin-right: 25px;
 }
 
 .nav-btn {
   position: relative;
   left: 20px;
-}
-
-#about-me {
-  background-color: rgba(220, 220, 220, .8);
-  /*padding: 40px 15%;*/
-}
-
-#portfolio {
-  /*padding: 40px 15%;*/
-  background-color: rgba(41, 86, 143, .6);
-  /*border-top: 1px solid #000;*/
-}
-
-#contact {
-  /*padding: 40px 15%;*/
-  background-color: #2B2B2B;
-  /*border-top: 1px solid #000;  */
 }
 
 .img-rounded {
@@ -193,6 +180,11 @@ h2 {
   margin-bottom: 40px;
 }
 
+.img-container {
+  position: relative;
+  width: 100%;
+}
+
 .img-portfolio {
   display: block;
   margin: auto;
@@ -200,12 +192,41 @@ h2 {
   min-width: 100%;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #4682B4;
+}
+
+.img-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  color: #000;
+  font-size: 1em;
+  font-family: 'Black Han Sans', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .project {
-  padding: 50px 0px;
+  padding: 50px 0;
 }
 
 div.line {
-  border-top: 1px solid #000;
+  border-top: 1px ridge #000;
 }
 
 .buttons {
@@ -235,18 +256,18 @@ a.link-btn:hover {
 .btn-project {
   display: block;
   font-family: 'Black Han Sans', sans-serif;
-  font-size: 1em;
+  font-size: 0.75em;
+  font-weight: 400;
   color: lightblue;
   text-align: center;
-  vertical-align: middle;
   background: none;
   border: 2px solid yellow;
   border-radius: 20px;
   margin: 0 auto;
   cursor: pointer;
   user-select: none;
-  height: 1.75em;
-  width: 10em;
+  height: auto;
+  width: 9em;
   margin-bottom: 20px; 
 }
 
@@ -256,24 +277,25 @@ a.btn-project:hover {
   border-color: seagreen;
 }
 
-footer {
-  padding-bottom: 10px;
-  background-color: #131516;
+input, textarea {
+  margin: 2px;
+  background-color: #DADEDF;
+  width: 15em;
+  border: 1px solid #FFF;
 }
 
-.email {
-  text-decoration: underline;
-  color: #F0F0F0;
+input[type="submit"] {
+  margin-left: -9em;
+  font-family: 'Black Han Sans', sans-serif;
+  width: 6em;
+  height: 2em;
+  background-color: #6F7C80;
+  border: 2px solid black;
+  border-radius: 3px;
 }
 
-.triangle-down {
-  width: 0;
-  height: 0;
-  border-top: 30px solid rgba(41, 86, 143, .6);
-}
-
-.triangle {
-  width: 0;
-  height: 0;
-  border-bottom: 30px solid rgba(41, 86, 143, .6);
+input[type="submit"]:hover {
+  background-color: cornflowerblue;
+  border: none;
+  cursor: pointer;
 }
