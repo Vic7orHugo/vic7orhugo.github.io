@@ -162,7 +162,7 @@ a.about:hover {
 
 .nav-btn {
   position: relative;
-  right: 20px;
+  left: 20px;
 }
 
 #about-me {
@@ -178,7 +178,7 @@ a.about:hover {
 
 #contact {
   /*padding: 40px 15%;*/
-  background-color: rgba(0, 71, 49, .6);
+  background-color: #2B2B2B;
   /*border-top: 1px solid #000;  */
 }
 
@@ -212,12 +212,15 @@ div.line {
   position: relative;
   top: 33%;
   text-align: center;
-  margin-top: 50px;
+  padding-top: 50px;
+  margin-bottom: 30px;
 }
 
 .link-btn {
-  background-color: #000;
+  background-color: #2B2B2B;
   margin: 0 2px;
+  width: 65px;
+  height: 50px;
 }
 
 a.link-btn {
@@ -225,7 +228,8 @@ a.link-btn {
 }
 
 a.link-btn:hover {
-  color: darkviolet;
+  background-color: #6F7C80;
+  border: 2px solid white;
 }
 
 .btn-project {
@@ -253,11 +257,23 @@ a.btn-project:hover {
 }
 
 footer {
-  padding-bottom: 5px;
-  background-color: #313335;
+  padding-bottom: 10px;
+  background-color: #131516;
 }
 
 .email {
   text-decoration: underline;
-  color: lightblue;
+  color: #F0F0F0;
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-top: 30px solid rgba(41, 86, 143, .6);
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-bottom: 30px solid rgba(41, 86, 143, .6);
 }
