@@ -29,6 +29,7 @@
 html {
   min-height: 100%;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 /* Fill page height */
