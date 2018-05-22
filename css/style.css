@@ -284,12 +284,12 @@ a.btn-project:hover {
 input, textarea {
   margin: 2px;
   background-color: #DADEDF;
-  width: 15em;
+  width: 25em;
   border: 1px solid #FFF;
 }
 
 input[type="submit"] {
-  margin-left: -9em;
+  margin-left: -19em;
   font-family: 'Black Han Sans', sans-serif;
   width: 6em;
   height: 2em;

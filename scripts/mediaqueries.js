@@ -43,5 +43,5 @@ window.addEventListener('resize', (event) => {
 });
 
 let contentQuery = window.matchMedia(MEDIA_QUERY); 	// State
-contentPadding(contentQuery);						// Call listener function at run time
-contentQuery.addListener(contentPadding); 			// Attach listener function on state changes
+contentPadding(contentQuery);												// Call listener function at run time
+contentQuery.addListener(contentPadding); 					// Attach listener function on state changes
