@@ -282,14 +282,17 @@ a.btn-project:hover {
 }
 
 input, textarea {
-  margin: 2px;
-  background-color: #DADEDF;
+  margin: 5px 2px;
+  padding: 5px;
+  background-color: #FFF;
+  border-radius: 5px;
   width: 25em;
   border: 1px solid #FFF;
 }
 
 input[type="submit"] {
   margin-left: -19em;
+  padding: 0;
   font-family: 'Black Han Sans', sans-serif;
   width: 6em;
   height: 2em;
